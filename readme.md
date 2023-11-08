@@ -107,3 +107,6 @@
 - function scope
     - Can use both ":=" & "var"
     - Cannot have unused variables 
+
+## Constants
+- can have unused constants at both package & function scope
