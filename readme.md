@@ -121,3 +121,7 @@
 - Can have more than one return results (named result)
 - Variadic function
 - Anonymous function
+- Higher Order functions
+    - Assign functions as values to variables
+    - Pass functions as arguments
+    - Return functions as return values
