@@ -111,3 +111,8 @@
 
 ## Constants
 - can have unused constants at both package & function scope
+
+## Constructs
+1. if else
+2. for
+3. switch case
