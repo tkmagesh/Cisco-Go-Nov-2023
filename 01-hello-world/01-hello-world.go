@@ -2,6 +2,7 @@
 package main
 
 // import dependency packages
+import "fmt"
 
 // package level type/variable declarations
 
@@ -9,7 +10,8 @@ package main
 
 // main function
 func main() {
-	print("Hello World!")
+	// print("Hello World!")
+	fmt.Println("Hello World!")
 }
 
 // other functions
