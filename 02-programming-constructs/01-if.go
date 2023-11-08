@@ -17,5 +17,4 @@ func main() {
 	} else {
 		fmt.Printf("%d is an odd number\n", no)
 	}
-
 }
