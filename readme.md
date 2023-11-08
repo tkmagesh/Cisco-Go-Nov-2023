@@ -70,3 +70,40 @@
     >go build <file_name.go>
     - One can also combine the above steps
     >GOOS=windows GOARCH=amd64 go build <file_name.go>
+
+## Data Types
+- string
+- bool
+- integer types
+    - int8
+    - int16
+    - int32
+    - int64
+    - int
+- unsigned integer types
+    - uint8
+    - uint16
+    - uint32
+    - uint64
+    - uint
+- floating point types
+    - float32
+    - float64
+- complex number types
+    - complex64 (real [float32] + imaginary [float32])
+    - complex128 (real [float64] + imaginary [float64])
+- type aliases
+    - byte (alias for uint8)
+    - rune (alias for int32)(unicode code point)
+
+## Variable Declarations
+- using "var" keyword
+- using ":=" 
+
+## Variable Scope
+- package scope
+    - Cannot use ":="
+    - Can have unused variables
+- function scope
+    - Can use both ":=" & "var"
+    - Cannot have unused variables 
