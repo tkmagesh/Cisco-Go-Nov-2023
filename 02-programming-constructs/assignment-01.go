@@ -1,0 +1,1 @@
+/* Write a program that prints the prime numbers between 2 to 100 */
