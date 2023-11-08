@@ -31,6 +31,7 @@
     - No pointer arithmatic
     - No exceptions (ONLY errors)
     - No try..catch..finally construct
+    - No implicit type conversion
 - Close to hardware
     - Compiled to machine code
     - Extremely fast startup
