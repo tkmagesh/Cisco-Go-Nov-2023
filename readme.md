@@ -116,3 +116,7 @@
 1. if else
 2. for
 3. switch case
+
+## Functions
+- Can have more than one return results (named result)
+- Variadic function

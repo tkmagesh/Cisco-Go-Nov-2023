@@ -55,7 +55,7 @@ func divide(x, y int) (int, int) {
 }
 */
 
-// using named return results
+// using named return results (preferred when more than 1 return result)
 func divide(x, y int) (quotient, remainder int) {
 	quotient, remainder = x/y, x%y
 	return
