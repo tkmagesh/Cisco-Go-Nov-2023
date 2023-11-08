@@ -120,3 +120,4 @@
 ## Functions
 - Can have more than one return results (named result)
 - Variadic function
+- Anonymous function
