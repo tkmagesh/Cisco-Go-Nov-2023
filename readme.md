@@ -154,3 +154,26 @@
 
 ### Map
 - collection of key/value pairs
+
+## Modularity
+Application is organized interms of "modules" & "packages"
+
+### Module
+- Any code that need to be versioned and deployed together (application)
+- Typically it is a folder with the **go.mod** file
+- go.mod
+    - name of the module (preferrably the repo path)
+    - the targetted go runtime version
+    - dependencies
+- How to create a module
+    > go mod init <module_name>
+- How to execute a module
+    > go run .
+- How to create a build
+    > go build .
+    > go build -o <binary_name> .
+
+### Package
+- Internal organization of code in a module
+- Typically a folder
+- All the code across the files in a folder are considered to be ONE entity
