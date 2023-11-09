@@ -125,3 +125,11 @@
     - Assign functions as values to variables
     - Pass functions as arguments
     - Return functions as return values
+
+## Errors
+- Errors are just values
+- Errors are not "thrown" but returned from functions
+- Errors implement the "error" interface (prescribed)
+- Errors can be created using the following:
+    - errors.New()
+    - fmt.Errorf()
