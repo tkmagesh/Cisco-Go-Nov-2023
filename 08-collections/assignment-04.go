@@ -1,0 +1,3 @@
+/* Write a function that returns all the prime numbers beween the given start and end
+print the generated prime numbers in the main function
+*/
