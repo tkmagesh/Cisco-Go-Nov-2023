@@ -136,3 +136,10 @@
 
 ## Panic & Recovery
 **Panic** - the state of the application where the application execution cannot proceed further
+
+## Collections
+- Only 3 types (Array, Slice & Map)
+
+### Array
+- Fixed sized collection of data of the same type
+- Memory allocation and initialization happens at the declaration itself
