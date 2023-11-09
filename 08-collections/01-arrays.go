@@ -32,10 +32,22 @@ func main() {
 	dupNos[0] = 9999
 	fmt.Printf("nos[0] = %d, dupNos[0] = %d\n", nos[0], dupNos[0])
 
-	sort( /* ? */ ) // sort the nos array
+	var nosPtr *[5]int
+	nosPtr = &nos
+	// fmt.Println((*nosPtr)[0])
+	fmt.Println(nosPtr[0]) // elements from the pointer to an array can be directly accessed without dereferencing
+
+	sort(&nos) // sort the nos array
 	fmt.Println("After sorting, nos :", nos)
 }
 
-func sort( /* ? */ ) /* no return result */ {
+func sort(list *[5]int) /* no return result */ {
 	// use bubble sort to sort the given list of integers
+	for i := 0; i < 4; i++ {
+		for j := i + 1; j < 5; j++ {
+			if list[i] > list[j] {
+				list[i], list[j] = list[j], list[i]
+			}
+		}
+	}
 }
