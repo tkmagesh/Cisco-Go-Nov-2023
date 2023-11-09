@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
+
+var ErrDivideByZero = errors.New("divide by 0 error")
 
 func main() {
 	defer func() {
@@ -25,6 +30,10 @@ func divide(x, y int) (quotient, remainder int) {
 		fmt.Println("	[deferred @ divide]")
 	}()
 	fmt.Println("[@divide] calculating quotient")
+	// programmatically creating a panic
+	if y == 0 {
+		panic(ErrDivideByZero)
+	}
 	quotient = x / y
 	fmt.Println("[@divide] calculating remainder")
 	remainder = x % y
