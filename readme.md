@@ -133,3 +133,6 @@
 - Errors can be created using the following:
     - errors.New()
     - fmt.Errorf()
+
+## Panic & Recovery
+**Panic** - the state of the application where the application execution cannot proceed further
