@@ -35,8 +35,15 @@ func main() {
 	}
 	display(product)
 
+	// accessing the members with a pointer
+	/*
+		var productPtr *Product = &product
+		fmt.Println(productPtr.id)
+	*/
+
 	// use the applyDiscount function to update the cost of the product with 10% discount
 	fmt.Println("After applying 10% discount")
+	applyDiscount(&product, 10)
 	display(product)
 }
 
@@ -44,6 +51,6 @@ func display(p Product) {
 	fmt.Printf("id = %d, name = %q, cost = %0.2f\n", p.id, p.name, p.cost)
 }
 
-func applyDiscount( /*  */ ) {
-	/*  */
+func applyDiscount(productPtr *Product, discountPercentage float32) {
+	productPtr.cost = productPtr.cost * ((100 - discountPercentage) / 100)
 }
