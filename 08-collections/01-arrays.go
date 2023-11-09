@@ -34,7 +34,7 @@ func main() {
 
 	var nosPtr *[5]int
 	nosPtr = &nos
-	// fmt.Println((*nosPtr)[0])
+	// fmt.Println((*nosPtr)[0]) // accessing the elements from the array pointer by deferencing
 	fmt.Println(nosPtr[0]) // elements from the pointer to an array can be directly accessed without dereferencing
 
 	sort(&nos) // sort the nos array

@@ -143,3 +143,7 @@
 ### Array
 - Fixed sized collection of data of the same type
 - Memory allocation and initialization happens at the declaration itself
+
+### Slice
+- Varying sized collection of data of the same type
+- We do not mention the size of the list in declaration
