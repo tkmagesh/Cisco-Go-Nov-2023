@@ -34,8 +34,16 @@ func main() {
 		cost: 10,
 	}
 	display(product)
+
+	// use the applyDiscount function to update the cost of the product with 10% discount
+	fmt.Println("After applying 10% discount")
+	display(product)
 }
 
 func display(p Product) {
 	fmt.Printf("id = %d, name = %q, cost = %0.2f\n", p.id, p.name, p.cost)
+}
+
+func applyDiscount( /*  */ ) {
+	/*  */
 }
