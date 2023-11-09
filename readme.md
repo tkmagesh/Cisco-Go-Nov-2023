@@ -60,17 +60,16 @@
 - To get the list of environment variables
     >go env
 - To get the value of given environment variables
-    >go env <var_name_1> <var_name_2> ....
-    ex:
-    >go env GOOS GOARCH
+    - >go env <var_name_1> <var_name_2> ....
+    - >ex: go env GOOS GOARCH
 - To set the environment variables
     >go env -w <var_name_1>=<value_1> <var_name_2>=<value_2> ...
 - To cross compile
     - Set the appropriate values for the GOOS & GOARCH env variables and create a build
-    >go env -w GOOS=windows GOARCH=amd64
-    >go build <file_name.go>
+        - >go env -w GOOS=windows GOARCH=amd64
+        - >go build <file_name.go>
     - One can also combine the above steps
-    >GOOS=windows GOARCH=amd64 go build <file_name.go>
+        - >GOOS=windows GOARCH=amd64 go build <file_name.go>
 
 ## Data Types
 - string
@@ -190,3 +189,6 @@ Application is organized interms of "modules" & "packages"
 - Internal organization of code in a module
 - Typically a folder
 - All the code across the files in a folder are considered to be ONE entity
+
+## Structs
+- How we create "class" in go
