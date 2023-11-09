@@ -147,3 +147,10 @@
 ### Slice
 - Varying sized collection of data of the same type
 - We do not mention the size of the list in declaration
+- Use **make** function to customize the memory allocation 
+- len -> allowed # of values that can be accessed from the underlying array
+- capacity -> overall memory allocated to the underlying array (initialized + uninitialized)
+![image slices](./images/slices.png)
+
+### Map
+- collection of key/value pairs
