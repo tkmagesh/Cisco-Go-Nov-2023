@@ -165,14 +165,27 @@ Application is organized interms of "modules" & "packages"
     - name of the module (preferrably the repo path)
     - the targetted go runtime version
     - dependencies
-- How to create a module
+- To create a module
     > go mod init <module_name>
-- How to execute a module
+- To execute a module
     > go run .
-- How to create a build
-    > go build .
-    > go build -o <binary_name> .
-
+- To create a build
+    - >go build .
+    - >go build -o <binary_name> .
+- To get the 3rd party modules (downloaded by default in **GOPATH/pkg** folder)
+    > go get <module_name>
+- To download the dependencies referenced in the go.mod file
+    > go mod download
+- To install command line tools built in go (downloaded by default in **GOPATH/bin** folder)
+    > go install <module_name>
+- To localize the dependencies
+    > go mod vendor
+- To list the dependency modules
+    > go list -m all
+- Other useful commands
+    - > go mod graph
+    - > go mod why <module_name>
+- Reference: https://go.dev/ref/mod
 ### Package
 - Internal organization of code in a module
 - Typically a folder
