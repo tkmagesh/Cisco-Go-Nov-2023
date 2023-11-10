@@ -234,5 +234,6 @@ Application is organized interms of "modules" & "packages"
         - blocked until the data becomes available in the channel
     - Send Operation
         - blocked until a receive operation is initiated (conditional)
+        - In the case of a buffered channel, a send operation can succeed even when a receive operation is not initiated (unless the buffer is full)
     ![image channel-behaviors](./images/channel-behaviors.png)
     - A receive operation on a "closed" channel will return default value of the channel data type
