@@ -210,3 +210,8 @@ Application is organized interms of "modules" & "packages"
 ### sync.WaitGroup
 - Semaphore based counter
 - Ability to block the execution of the current function until counter becomes 0
+### Data Race
+- To detect data race
+    - >go run **-race** filename.go
+    - >go build **-race** filename.go
+    - Note : DO NOT create a production build with race detector
