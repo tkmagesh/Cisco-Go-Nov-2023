@@ -235,3 +235,4 @@ Application is organized interms of "modules" & "packages"
     - Send Operation
         - blocked until a receive operation is initiated (conditional)
     ![image channel-behaviors](./images/channel-behaviors.png)
+    - A receive operation on a "closed" channel will return default value of the channel data type
