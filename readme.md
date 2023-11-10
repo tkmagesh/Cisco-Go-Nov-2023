@@ -192,3 +192,7 @@ Application is organized interms of "modules" & "packages"
 
 ## Structs
 - How we create "class" in go
+
+## Method
+- A function with a receiver
+- Use a pointer as a receiver if the method changes the state of the object
