@@ -201,3 +201,12 @@ Application is organized interms of "modules" & "packages"
 ## Interfaces
 - Interfaces are "implicitly" implemented in go
 - Interfaces can be composed to create higher level of abstractions
+
+## Concurrency
+- Builtin Scheduler (as a part of the application binary)
+- A concurrent operation (function) is represented as a "goroutine"
+- A goroutine is a lightweight thread (~4KB whereas a OS thread is ~2MB)
+![image concurrency](./images/concurrency.png)
+### sync.WaitGroup
+- Semaphore based counter
+- Ability to block the execution of the current function until counter becomes 0
