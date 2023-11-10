@@ -215,3 +215,16 @@ Application is organized interms of "modules" & "packages"
     - >go run **-race** filename.go
     - >go build **-race** filename.go
     - Note : DO NOT create a production build with race detector
+
+### Channels
+- Enable us to share memory by communicating
+- Declaration
+    - > var ch chan int
+- Initilization
+    - > ch = make(chan int)
+- Operations
+    - using the channel operator ( <- )
+    - Send Operation
+        - > ch <- 100
+    - Receive Operation
+        - > data := <- ch
