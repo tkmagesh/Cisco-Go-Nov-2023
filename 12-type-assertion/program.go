@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var x interface{}
+	// var x interface{}
+	var x any
 	x = 100
 	x = "Anim laborum qui ipsum dolor duis do ex."
 	x = 99.99
