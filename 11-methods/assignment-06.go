@@ -83,6 +83,22 @@ func (products Products) Filter(predicate func(Product) bool) Products {
 	return result
 }
 
+/*
+func negate(predicate func(Product) bool) func(Product) bool {
+	return func(p Product) bool {
+		return !predicate(p)
+	}
+}
+*/
+
+type ProductPredicate func(Product) bool
+
+func negate(predicate ProductPredicate) ProductPredicate {
+	return ProductPredicate(func(p Product) bool {
+		return !predicate(p)
+	})
+}
+
 func main() {
 
 	products := Products{
@@ -107,5 +123,16 @@ func main() {
 	costlyProducts := products.Filter(costlyProductPredicate)
 	fmt.Println("Costly Products")
 	fmt.Println(costlyProducts.Format())
+
+	/*
+		affordableProductPredicate := func(p Product) bool {
+			return !costlyProductPredicate(p)
+		}
+	*/
+
+	affordableProductPredicate := negate(costlyProductPredicate)
+	affordableProducts := products.Filter(affordableProductPredicate)
+	fmt.Println("Affordable products")
+	fmt.Println(affordableProducts.Format())
 
 }
