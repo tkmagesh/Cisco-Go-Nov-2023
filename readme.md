@@ -197,3 +197,7 @@ Application is organized interms of "modules" & "packages"
 - A function with a receiver
 - Use a pointer as a receiver if the method changes the state of the object
 - The Type for which the method is created and the method definition must be in the same package. In other words, both the type definition and the method definition must be in the same package.
+
+## Interfaces
+- Interfaces are "implicitly" implemented in go
+- Interfaces can be composed to create higher level of abstractions
