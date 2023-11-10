@@ -228,3 +228,10 @@ Application is organized interms of "modules" & "packages"
         - > ch <- 100
     - Receive Operation
         - > data := <- ch
+- Channel Behaviors
+    - Receive Operation
+        - always a blocking operation
+        - blocked until the data becomes available in the channel
+    - Send Operation
+        - blocked until a receive operation is initiated (conditional)
+    ![image channel-behaviors](./images/channel-behaviors.png)
